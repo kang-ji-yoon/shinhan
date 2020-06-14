@@ -1,0 +1,109 @@
+@font-face{
+    font-family: AppleSDGothicNeoB;
+    src: url('./AppleSDGothicNeoB.ttf');
+}
+
+.information_inner {
+    background-color: rgb(28, 103, 241);
+    height: 60rem;
+    padding : 20px;
+}
+
+.receiveMoney {
+    text-align: center;
+    background-color: white;
+    height: 100px;
+    font-size: 90px;
+    padding: 70px;
+    border-radius: 20px;
+    line-height: 100px;
+    margin: 0 20px;
+    color: gray;
+    font-family: AppleSDGothicNeoB;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px 1px;
+    overflow: hidden;
+}
+
+.account_inner {
+    margin: 50px auto;
+    display: flex;
+    padding: 40px;
+    height: 70px;
+}
+
+.accountName {
+    display: block;
+    font-size: 40px;
+    line-height: 120px;
+    height: 120px;
+    font-weight: bold;
+}
+
+.accountBox {
+    position: absolute;
+    right: 10px;
+    width: 650px;
+    margin-right: 20px;
+    font-size: 45px;
+    height: 120px;
+    background: url('/public/picture/arrow.PNG') no-repeat 100% 50% white;
+    -webkit-appearance: none;
+}
+.map{
+    margin-left: 300px; 
+}
+#Money {
+    height: 100px;
+    font-size: 50px;
+    background-color: transparent;
+    border: 0 solid black;
+    text-align: center;
+    width: -webkit-fill-available;
+    font-family: AppleSDGothicNeoB;
+}
+
+option {
+    font-size: 10px;
+}
+
+#sample3_address {
+    width: 550px;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 50px;
+    height: 60px;
+    font-family: AppleSDGothicNeoB;
+}
+
+#search_button {
+    font-size: 40px;
+    margin-left: 60px;
+    width: 200px;
+    height: 60px;
+    font-family: AppleSDGothicNeoB;
+}
+
+.password {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 200px 70px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#Submit {
+    /* position: absolute; */
+    position : fixed;
+    bottom: 0px;
+    left: 0px;
+    font-size: 65px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 150px;
+    width: -webkit-fill-available;
+    border: 0px;
+    font-family: AppleSDGothicNeoB;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>delimoney</title>
+    <link rel="stylesheet" href="/public/css/delmoney.css" />
+  </head>
+
+  <body>
+    <form action="/delmoneyout" method="POST">
+      <div class="information_inner">
+        <div class="receiveMoney">
+          <input
+            id="Money"
+            name="receiveMoney"
+            type="number"
+            placeholder="찾을 금액(원)"
+          />
+        </div>
+        <div class="account_inner">
+          <div class="accountName">계좌 선택 :</div>
+          <select name="account" class="accountBox">
+            <option value="1002-285-020724">1002-285-020724</option>
+            <option value="3513-363-432535">3513-363-432535</option>
+          </select>
+        </div>
+        <input type="text" id="sample3_address" name="address" placeholder="주소" />
+        <input
+          type="button"
+          id="search_button"
+          onclick="sample3_execDaumPostcode()"
+          value="주소 검색"
+        />
+        <div
+          id="wrap"
+          style="width:-webkit-fill-available;display:none;border:1px solid;height:100px;margin:10px 0;position:relative"
+        >
+          <img
+            src="//t1.daumcdn.net/postcode/resource/images/close.png"
+            id="btnFoldWrap"
+            style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1"
+            onclick="foldDaumPostcode()"
+            alt="접기 버튼"
+          />
+        </div>
+        <br />
+        <div
+          id="map"
+          style="width:-webkit-fill-available;height:370px;margin-top:30px;display:none"
+        ></div>
+      </div>
+      <div class="password_inner" style="display: flex">
+        <input
+          type="number"
+          class="password"
+          onkeypress="spellCheck(this)"
+          name="pw1"
+        />
+        <input
+          type="number"
+          class="password"
+          onkeypress="spellCheck(this)"
+          name="pw2"
+        />
+        <input
+          type="number"
+          class="password"
+          onkeypress="spellCheck(this)"
+          name="pw3"
+        />
+        <input
+          type="number"
+          class="password"
+          onkeypress="spellCheck(this)"
+          name="pw4"
+        />
+      </div>
+      <input type="submit" value="신청하기" id="Submit" />
+    </form>
+
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=73aa460d0ca8b88ede6a1daba7890452&libraries=services"></script>
+    <script src="/public/delmoney.js"></script>
+  </body>
+</html>

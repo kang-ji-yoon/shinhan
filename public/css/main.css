@@ -1,0 +1,139 @@
+@font-face{
+    font-family: AppleSDGothicNeoB;
+    src: url('./AppleSDGothicNeoB.ttf');
+}
+body{
+    font-family: AppleSDGothicNeoB;
+}
+.btn {
+    
+    margin: auto;
+    float: left;
+    text-align: center;
+    font-size: 2rem;
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    margin: 10px;
+    transition: all .3s linear;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+:hover.btn {
+    background-color: blue;
+    color: white;
+    box-shadow: 4px 4px 2px skyblue;
+}
+
+.big-area {
+    margin: auto;
+    width: 564px;
+    padding: 10px;
+    background: transparent;
+
+}
+
+.main {
+    text-align: center;
+    padding: 70px;
+    padding-top: 400px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.help-tip{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    text-align: center;
+    background-color: #BCDBEA;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+   }
+   
+   /* 보여지는 그림, help(?) 그림 */
+   .help-tip:before{
+    content:'?';
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: bold;
+    color:#fff;
+   }
+   
+   /* 도움말의 animation */
+   .help-tip:hover p{
+    display:block;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+   
+   }
+   
+   /* 도음말 기본 모양 */
+   .help-tip p{
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 500px;
+    border-radius: 3px;  /* 둥근 모서리 */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.4;
+   }
+   
+   /* 도움말 풍선의 세모 모양 */
+   .help-tip p:before{
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:23px;
+    top:-12px;
+   }
+   
+   /* 도움말 풍선이 가려지는 것을 방지?
+    잘은 모르겠지만 이것으로 인해 ?표시 있는 곳 까지
+    <p> 영역을 확장하게 된다. 아래 그림 참조
+    */
+   .help-tip p:after{
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+   }
+   
+   /* for animation */
+   @-webkit-keyframes fadeIn {
+    0% { 
+     opacity:0; 
+     transform: scale(0.6);
+    }
+   
+    100% {
+     opacity:100%;
+     transform: scale(1);
+    }
+   }
+   
+   @keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+   }

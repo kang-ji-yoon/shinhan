@@ -1,0 +1,87 @@
+@font-face{
+    font-family: AppleSDGothicNeoB;
+    src: url('./AppleSDGothicNeoB.ttf');
+}
+body{
+    font-family: AppleSDGothicNeoB;
+}
+
+.MainBlock {
+    background-color: rgb(28, 103, 241);
+    height: 200px;
+
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 1px rgb(180, 180, 185);
+}
+
+.SubBlock {
+
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 20px;
+    color: black;
+    font-family: 나눔바른고딕;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px 1px;
+    overflow: hidden;
+}
+
+.queryNumber {
+    position: relative;
+    top: 50px;
+}
+
+.button1 {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    box-shadow: inset 10px 10px 10px rgba(201, 60, 60, 0.2), 0 0 10px rgba(255, 49, 49, 0.2);
+    margin-right: 10px;
+}
+
+.button2 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: inset 10px 10px 10px rgba(201, 60, 60, 0.2), 0 0 10px rgba(255, 49, 49, 0.2);
+    margin-left: 10px;
+}
+
+input {
+    background-color: #fa8b6f;
+    width: 150px;
+    border: none;
+
+    color: #fff;
+
+    padding: 15px 0;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 20px;
+
+    margin: 4px;
+
+    cursor: pointer;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.image {
+    text-align: center;
+    margin-top: 20px;
+}
