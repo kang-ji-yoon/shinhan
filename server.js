@@ -11,7 +11,7 @@ var app = express();
 
 var routes = require('./router.js');
 
-app.listen(80, '175.116.44.237', function() {
+app.listen(3000, function() {
     console.log('익스프레스 서버를 시작했습니다.' + '80');
 });
 
